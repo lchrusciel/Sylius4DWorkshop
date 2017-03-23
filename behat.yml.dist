@@ -1,11 +1,13 @@
 imports:
     - vendor/sylius/sylius/behat.yml.dist
+    - src/AppBundle/Behat/Resources/suites/managing_suppliers.yml
 
 default:
     extensions:
         FriendsOfBehat\ContextServiceExtension:
             imports:
                 - "vendor/sylius/sylius/src/Sylius/Behat/Resources/config/services.xml"
+                - "src/AppBundle/Behat/Resources/services.yml"
 
         FriendsOfBehat\SuiteSettingsExtension:
             paths:

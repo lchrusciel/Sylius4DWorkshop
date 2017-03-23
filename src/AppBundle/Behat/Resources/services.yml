@@ -1,0 +1,11 @@
+services:
+    app.behat.page.admin.supplier.create:
+        class: AppBundle\Behat\Page\Supplier\CreatePage
+        parent: 'sylius.behat.page.admin.crud.create'
+        public: false
+
+    app.behat.context.ui.admin.managing_suppliers:
+        class: AppBundle\Behat\Context\ManagingSuppliersContext
+        arguments: ['@app.behat.page.admin.supplier.create']
+        tags:
+            - { name: fob.context_service }

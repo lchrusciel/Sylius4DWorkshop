@@ -7,7 +7,7 @@ Feature: Adding a new supplier
     Background:
         Given I am logged in as an administrator
 
-    @todo
+    @ui
     Scenario: Adding a new supplier
         When I create a new supplier
         And I specify its code as "uruk_hai_supplier"
